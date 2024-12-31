@@ -68,3 +68,43 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+------Overview--------
+The Stock Portfolio Tracker is a full-stack web application designed to help users manage and track their stock investments. It allows users to maintain a portfolio of stocks, view their current prices, calculate total portfolio value, and visualize their holdings through charts. The application fetches real-time stock data using the Alpha Vantage API and provides an intuitive interface for adding, editing, and deleting stocks.
+
+-------Frontend----------
+User Authentication: 
+    Login system with fields for username, email, and password to access the portfolio.
+Stock Portfolio Management:
+    Add, edit, and delete stock entries.
+    Display stock details, including name, ticker, quantity, and current price.
+    Calculate and display the total portfolio value dynamically.
+Data Visualization:
+    Interactive line chart displaying portfolio value distribution.
+    Table view for detailed portfolio insights.
+Responsive Design:
+    Built with React and Bootstrap for a seamless user experience across devices.
+    Randomized Stock Initialization:
+    Automatically populates the portfolio with a selection of stocks during the first load.
+
+
+----Backend-------
+Express Server:
+    API to fetch stock prices and manage the portfolio data.
+    Enables communication between the frontend and the Alpha Vantage API.
+Portfolio Management:
+    Stores and manipulates stock portfolio data on the server.
+    Dummy database setup for storing portfolio details.
+
+
+----Technologies Used----
+Frontend
+    React.js
+    Bootstrap And TAILWIND for UI components
+    Recharts for charting
+    Alpha Vantage API for real-time stock data
+Backend
+    Node.js
+    Express.js for API and server management
+    Axios for API calls
+    CORS for cross-origin resource sharing
