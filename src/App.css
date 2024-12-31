@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+.app {
+  @apply max-w-7xl mx-auto p-6 bg-white shadow-lg rounded-lg;
+}
+
+header h1 {
+  @apply text-4xl font-bold text-gray-700 mb-4;
+}
+
+.form-section h2,
+.table-section h2 {
+  @apply text-2xl font-semibold text-gray-700 mb-4;
+}
+
+.form-section .form-label {
+  @apply block text-sm font-medium text-gray-600 mb-2;
+}
+
+input, select {
+  @apply block w-full border border-gray-300 rounded-md py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400 mb-4;
+}
+
+button {
+  @apply inline-flex items-center justify-center px-4 py-2 text-white font-semibold rounded-md shadow transition-all duration-200 ease-in-out;
+}
+
+button:hover {
+  @apply shadow-lg transform scale-105;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.btn-danger {
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+.table {
+  @apply w-full border-collapse border border-gray-300 text-left text-sm;
+}
+
+.table th {
+  @apply bg-gray-200 text-gray-600 px-4 py-2 border-b;
+}
+
+.table td {
+  @apply px-4 py-2 border-b text-gray-700;
+}
+
+.table-section {
+  @apply mt-6;
+}
+
+footer p {
+  @apply mt-6 text-lg font-semibold text-gray-800;
+}
+
+.chart-container {
+  @apply w-full lg:w-1/2 max-w-4xl;
+}
+
+.main-content {
+  @apply flex flex-col lg:flex-row lg:space-x-6;
+}
+
+.left-column {
+  @apply flex-1;
+}
+
+.right-column {
+  @apply w-full lg:w-1/2 flex-shrink-0;
+}
+/* Increase space between header and content */
+header {
+  margin-bottom: 40px; /* Adjust this value as needed */
+}
+
+/* Increase the height of the Stock Holdings heading */
+.stock-holdings-section h2 {
+  font-size: 1.8rem; /* Adjust the font size */
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust margin to create space below */
+}
